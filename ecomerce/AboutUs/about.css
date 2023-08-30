@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Style Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 9%;
+  border-bottom: 1px solid black;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo-brand {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 1px 4px #000;
+}
+
+.logo-brand span {
+  color: #ffd803;
+}
+
+.navbar-nav a {
+  font-family: "Comme", sans-serif;
+  font-size: 1.3rem;
+  margin-right: 15px;
+}
+
+/* Style About */
+
+.hero {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-image: url(/img/fried-rice-plate-white-wooden-floor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-about {
+  width: 850px;
+  margin: auto;
+  padding: 3rem 7% 1.4rem;
+  align-items: center;
+  background-color: rgba(188, 252, 230, 0.5);
+  border-radius: 10px;
+}
+
+.main-about h1 {
+  font-size: 3rem;
+  font-family: "Comme", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-about p {
+  width: 700px;
+  margin: 0 70px;
+}
+
+.menu-about {
+  padding: 3rem 3% 1.4rem;
+}
+
+.row,
+.row-2 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.row .content,
+.row-2 .content {
+  margin: 100px 0 0 40px;
+}
+
+.row .content h2,
+.row-2 .content h2 {
+  font-size: 2rem;
+  font-family: "Comme", sans-serif;
+}
+
+.row-2 img,
+.row img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+/* Footer Style */
+
+footer {
+  background-color: rgba(188, 252, 230, 0.89);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.social,
+.links,
+.credit {
+  margin-bottom: 15px;
+}
+
+.social a,
+.links a {
+  margin-right: 15px;
+}
+
+/* Media Queris */
+
+/* Mobiel */
+@media screen and (max-width: 768px) {
+  /* Navbar Responsive */
+
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .navbar .logo-brand {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1.1rem;
+  }
+
+  /* Main-About */
+
+  .hero {
+    height: 400px;
+    background-position-x: 1px;
+  }
+
+  .main-about {
+    width: 490px;
+    padding-left: 0;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-about h1 {
+    font-size: 2rem;
+  }
+
+  .main-about p {
+    font-size: 0.9rem;
+    width: 490px;
+    margin: 5px;
+    text-align: inherit;
+  }
+
+  .menu-about {
+    padding-left: 0;
+  }
+
+  .menu-about .row,
+  .menu-about .row-2 {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    order: 2;
+  }
+
+  .about-img {
+    order: 1;
+  }
+
+  .menu-about .row img {
+    height: 24rem;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .row .content,
+  .row-2 .content {
+    margin: 40px 30px;
+  }
+}

@@ -1,0 +1,78 @@
+:root {
+  --bg: #fffffe;
+  --second: #e3f6f5;
+  --judul: #272343;
+  --p: #2d334a;
+  --p2: #bae8e8;
+  --button: #ffd803;
+  --buttonText: #272343;
+  --footer: #e16162;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/RESERFASI/ReservasiPict/coralbg.jpg);
+}
+
+.container {
+  width: 700px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.header {
+  padding: 10px;
+  background-color: var(--second);
+  border-radius: 12px;
+}
+
+.header span {
+  font-family: "Comme", sans-serif;
+  font-style: italic;
+}
+
+.header h2 {
+  font-size: 25px;
+}
+
+.header p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.content {
+  width: 700px;
+  margin-top: 15px;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .content {
+    width: 500px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+    margin: 80px 0;
+  }
+
+  .header h2 {
+    font-size: 15px;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+}

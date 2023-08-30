@@ -1,0 +1,83 @@
+:root {
+    --button: #ffd803;
+  }
+  
+  .cart {
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+  
+  .hamburger {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 21px;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .hamburger span {
+    display: block;
+    background-color: var(--button);
+    height: 3px;
+    width: 27px;
+    border-radius: 2px;
+  }
+  
+  .x {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .x img {
+    width: 2.5rem;
+  }
+  
+  /* Responsive */
+  
+  /* Tablet */
+  @media screen and (max-width: 768px) {
+    .cart {
+      margin-right: 4rem;
+    }
+  
+    .hamburger {
+      display: flex;
+      right: 0;
+      margin: 20px;
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+      z-index: 1;
+    }
+  
+    .hamburger.spin {
+      transform: rotate(180deg);
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    .x {
+      right: 13px;
+      display: flex;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    .x.active {
+      transform: rotate(360deg);
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      display: flex;
+    }
+  }

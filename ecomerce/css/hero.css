@@ -1,0 +1,115 @@
+:root {
+    --bg: #fffffe;
+    --second: #e3f6f5;
+    --judul: #272343;
+    --p: #2d334a;
+    --p2: #bae8e8;
+    --button: #ffd803;
+  }
+  
+  .hero {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    animation: slideInLeft 1s ease-out;
+    -webkit-animation: slideInLeft 1s ease-out;
+  }
+  
+  .hero h1 {
+    font-style: italic;
+    color: var(--bg);
+    font-size: 48px;
+    animation: slideInLeft 1.3s ease-out;
+    -webkit-animation: slideInLeft 1.3s ease-out;
+  }
+  
+  .hero h1 span {
+    color: var(--button);
+  }
+  
+  .hero p {
+    color: var(--bg);
+    font-size: 24px;
+    margin-top: 10px;
+    animation: slideInLeft 1.5s ease-out;
+    -webkit-animation: slideInLeft 1.5s ease-out;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border: solid 1px var(--button);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: ease 0.3s;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+    -ms-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    animation: slideInLeft 1.7s ease-out;
+    -webkit-animation: slideInLeft 1.7s ease-out;
+  }
+  
+  .hero .btn:hover {
+    background-color: #b69b06;
+    color: var(--buttonText);
+  }
+  
+  /* Animasi hero */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive */
+  
+  /* Tablet */
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 22px;
+    }
+  
+    .btn {
+      padding: 8px;
+      font-size: 22px;
+    }
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 480px) {
+    .hero h1 {
+      font-size: 26px;
+    }
+  
+    .hero p {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 20px;
+      padding: 6px;
+    }
+  }

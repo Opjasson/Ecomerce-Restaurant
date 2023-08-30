@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css -->
+    <!-- Header -->
+    <link rel="stylesheet" href="/css/background.css" />
+    <link rel="stylesheet" href="/css/hamburger.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/mainmenu.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/menuDrop.css" />
+
+    <!-- Hero -->
+    <link rel="stylesheet" href="/css/mainmenu.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comme:wght@200;400;700&family=Open+Sans:ital,wght@0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="/svg/shopping-bag.svg"
+      type="image/x-icon"
+    />
+
+    <title>Logistik</title>
+  </head>
+  <body>
+    <header>
+      <div class="bg">
+        <img />
+      </div>
+      <div class="overlay"></div>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Logis<span>tik</span></a>
+        </div>
+
+        <div id="menu">
+          <a href="index.html">Home</a>
+          <a href="RESERFASI/reserfasi.html">Reservasi</a>
+          <a
+            href="https://wa.me/+6282322397090?text=Saya%20mau%20reservasi%20min%0AAtas%20nama%20:%20"
+            >Contact</a
+          >
+          <a href="AboutUs/about.html">About Us</a>
+        </div>
+
+        <div class="cart">
+          <img src="/svg/shopping-bag.svg" alt="cart" />
+        </div>
+
+        <div id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="x">
+          <img src="/svg/x.svg" />
+        </div>
+
+        <div class="menuDrop">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Reservasi</a></li>
+              <li><a
+                href="https://wa.me/+6282322397090?text=Saya%20mau%20reservasi%20min%0AAtas%20nama%20:%20"
+                >Contact</a
+              ></li>
+             <li><a href="#">About Us</a></li>
+            
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hero -->
+
+      <div class="hero">
+        <h1>Selamat Datang di Restoran Logis<span>tik</span></h1>
+        <p>
+          Di mana segala cita rasa dan keindahan bersatu dalam satu kesatuan,
+          menanti untuk memanjakan lidah dan hatimu dalam setiap hidangan yang
+          kami sajikan.
+        </p>
+        <a href="#mainMenu" class="btn">Lihat Menu Kami</a>
+      </div>
+    </header>
+
+    <!-- Menu -->
+    <main id="mainMenu">
+      <div class="opsiMenu">
+        <a id="makananSlide">Makanan</a>
+        <a id="minumanSlide">Minuman</a>
+      </div>
+
+      <div class="pilihanMakanan">
+        <div class="menu">
+          <img src="/img/fried-rice-plate-white-wooden-floor.jpg" />
+          <h1>Nasi Goreng Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/TropisFood.jpg" />
+          <h1>Tropis Food Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/vegetarian_food.jpg" />
+          <h1>tempe Oreg Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/vegetarianEkstra.jpg" />
+          <h1>Salad Susu Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/ndog ceplok.jpg" />
+          <h1>Ndog Ceplok Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/5368927.jpg" />
+          <h1>Ayam oyeng Anjay</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+        
+      </div>
+
+      <div class="pilihanMinuman">
+        <div class="menu">
+          <img src="/img/EsSemangka.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/almond Coctails.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/EsTehNyak.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/Harom Coctails.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/Lemon Coctails.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        <div class="menu">
+          <img src="/img/almond Coctails.jpg" />
+          <h1>Ice Semangko</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            incidunt in minima sed asperiores amet!
+          </p>
+          <div>
+            <button onclick="kurang(this)">-</button>
+            <h3 id="banyakPesanan">0</h3>
+            <button onclick="tambah(this)">+</button>
+          </div>
+          <a href="">Masukkan Kerajang</a>
+        </div>
+
+        
+      </div>
+
+      
+      </div>
+    </main>
+
+    <!-- Js -->
+    <script src="/main.js"></script>
+  </body>
+</html>
